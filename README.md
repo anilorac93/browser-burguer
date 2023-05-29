@@ -1,6 +1,6 @@
 # <div align="center"> 🍟 🍔 BROWSER BURGUER 🍔 🍟 </div>
 
-<div align="center"> <img src= "src/assets/logo-origin.png" width ="300px" height = "400px"/></div>
+<div align="center"> <img src= "src/assets/logo-origin.png" width ="400px" height = "400px"/></div>
 
 ***
 
@@ -16,7 +16,7 @@ Neste projeto, está sendo desenvolvida uma interface em que se possa obter o co
 
 ## HISTÓRIAS DOS USUÁRIOS
 
-Possuímos seis histórias para a construção do projeto. Criamos uma ilustração, baseada nas histórias em quadrinhos afim de elucidar essas histórias e entender o fluxo de interações que os administradores e colaboradores da Browser Burguer desejam executar.
+Possuímos seis histórias para a construção do projeto. Criamos uma ilustração, baseada nas histórias em quadrinhos, afim de elucidar essas histórias de usuário e entender o fluxo de interações que os administradores e colaboradores da Browser Burguer desejam executar (**ESTAMOS TRABALHANDO NO DESENVOLVIMENTO DE UMA HISTÓRIA DE USUÁRIO POR VEZ**).
 
 <div align="center"> <img src= "src/assets/hus1.png" width = "800px" height = "550px"/> </div>
 
@@ -28,6 +28,6 @@ Possuímos seis histórias para a construção do projeto. Criamos uma ilustraç
 
 ***
 
-#### 🍔 AUTORAS: [CAROLINA MARIOTTO](https://github.com/anilorac93) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🤎
+#### 🍔 ESTE PROJETO ESTÁ SENDO CRIADO E DESENVOLVIDO POR: [CAROLINA MARIOTTO](https://github.com/anilorac93) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🤎
 
 ***
