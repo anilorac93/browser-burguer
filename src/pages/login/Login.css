@@ -1,0 +1,86 @@
+body {
+background-color: #bb2020;
+background-image: url(src/assets/background.png);  
+height: 90vh;
+background-size: inherit;
+background-repeat: no-repeat; 
+background-position: center;  
+display: grid;
+place-items: center; 
+position: relative;
+}
+
+.grid-container {
+display: grid;
+gap: 20px;
+grid-template-areas:
+    'logo'
+    'form';
+}
+  
+.logo {
+display: grid; 
+place-items: center;
+width: 150px;
+height: 140px;
+border-radius: 15px;
+justify-self: center;
+margin-top: -50px;
+}
+  
+form {
+display: grid;
+place-items: center;
+background: #831A14;
+border-radius: 35px;
+width: 350px;
+height: 420px;
+margin-top: 2px;
+}
+
+label {
+font-family: 'lobster';
+color: #FFFFFF;
+font-size: 20px;
+margin-bottom: 5px;
+margin-left: 18px;
+}
+
+input[type="email"],
+input[type="password"] {
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+background: #BA4B3A;
+border: none;
+border-radius: 15px;
+width: 300px;
+height: 20px;
+margin-left: 15px;
+}
+
+select {
+font-family: 'lobster';
+font-size: 16px;
+color: #FFFFFF;
+padding: 10px;
+margin-bottom: 10px;
+background: #BA4B3A;
+border: none;
+border-radius: 15px;
+width: 320px;
+height: 40px;
+margin-left: 15px;
+}
+  
+button {
+font-family: 'lobster';
+font-size: 20px;
+padding: 10px 20px;
+width: 130px;
+height: 50px;
+background: #FFD081;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+}  
