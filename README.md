@@ -1,6 +1,6 @@
-## <div align="center"> 🍟 🍔 BROWSER BURGUER 🍔 🍟 </div>
+# <div align="center"> 🍟 🍔 BROWSER BURGUER 🍔 🍟 </div>
 
-<div align="center"> <img src= "src/assets/logo-origin.png" width ="500px" height = "600px"/></div>
+<div align="center"> <img src= "src/assets/logo-origin.png" width ="300px" height = "400px"/></div>
 
 ***
 
@@ -10,9 +10,9 @@ Neste projeto, está sendo desenvolvida uma interface em que se possa obter o co
 
 *** 
 
-## ENTENDENDO O PROBLEMA DO NOSSO CLIENTE... 🤔
+### ENTENDENDO O PROBLEMA DO NOSSO CLIENTE... 🤔
 
-<div align="center"> <img src= "src/assets/problem.png" width ="800px" height = "550px"/> </div>
+<div align="center"> <img src= "src/assets/problem.png" width ="900px" height = "550px"/> </div>
 
 ## HISTÓRIAS DOS USUÁRIOS
 
@@ -20,7 +20,7 @@ Possuímos seis histórias para a construção do projeto. Criamos uma ilustraç
 
 <div align="center"> <img src= "src/assets/hus1.png" width = "800px" height = "550px"/> </div>
 
-<div align="center"> <img src= "src/assets/hus2.png" width = "800px" height = "550px"/> </div>
+<div align="center"> <img src= "src/assets/hus2.png" width = "800px" height = "500px"/> </div>
 
 *** 
 
@@ -28,6 +28,6 @@ Possuímos seis histórias para a construção do projeto. Criamos uma ilustraç
 
 ***
 
-### AUTORAS: 🍔 [CAROLINA MARIOTTO](https://github.com/anilorac93) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🤎
+#### 🍔 AUTORAS: [CAROLINA MARIOTTO](https://github.com/anilorac93) & [VANESSA MENEZES](https://github.com/VanessaNMenezes) 🤎
 
 ***
