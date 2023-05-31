@@ -1,0 +1,23 @@
+.menu {
+background-image: url(src/assets/menu.png);  
+height: 100vh;
+margin: 0;
+background-size: auto 100%;
+background-repeat: no-repeat; 
+background-position: center;  
+display: grid;
+place-items: center; 
+position: relative;
+}
+
+.button-menu {
+display: grid;
+margin-left: 115px;   
+margin-top: 20px;
+}
+
+@media (max-width: 420px) {
+    .menu {
+      background-size: contain;
+    }
+  }
