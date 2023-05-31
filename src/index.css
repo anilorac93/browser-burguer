@@ -1,1 +1,6 @@
-/* COLOCAREMOS AS CONFIGURAÇÕES GLOBAIS AQUI */
+body {
+background-color: #bb2020;
+margin: 0;
+padding: 0;
+font-family: 'lobster';
+}

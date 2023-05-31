@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Login } from './pages/login/Login';
-// import { Cardapio } from './pages/cardapio';
+import { Menu } from './pages/menu/Menu';
+import { Solicitations } from './pages/solicitations/Solicitations';
 import './index.css';
 
 const App = () => {
@@ -8,7 +9,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          {/* <Route path="/cardapio" element={<Cardapio />} /> */}
+          <Route path="/cardapio" element={<Menu />} />
+          <Route path="/pedidos" element={<Solicitations />} />
       
         </Routes>
       </BrowserRouter>
