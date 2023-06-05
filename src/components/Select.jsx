@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Select = ({ label, value, onChange, options }) => {
+  const selectId = `${label.toLowerCase()}-select`;
+
   return (
     <div>
-      <label>{label}</label>
-      <select value={value} onChange={onChange}>
+      <label htmlFor={selectId}>{label}</label>
+      <select id={selectId} value={value} onChange={onChange}>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
