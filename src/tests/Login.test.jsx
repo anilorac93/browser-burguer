@@ -1,13 +1,14 @@
 import React from 'react';
-import { Login } from '../Login.jsx'; 
+import { Login } from '../login/Login.jsx';
+import { fireEvent, render } from '@testing-library/react';
 
 describe('Login', () => {
-it('user must login with email, sector and password', () => {
-   const email = 'usertest@browserburguer.com';
-   const sector = 'admin';
-   const password = '123456';
+it('Atualizar o estado do e-mail na alteração de entrada de e-mail', () => {
+   render(Login);
+   const {email} = screen.getLabelText('Email');
+   fireEvent.change(email, {target: {value:'usertest@browserburguer.com'}})
+   
 expect(Login).toHaveBeenCalledTimes(1);
-}
-)
-}
-)
+expect(email.value).toBe('usertest@browserburguer.com');
+});
+});
