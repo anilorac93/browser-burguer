@@ -1,0 +1,9 @@
+.administration {
+font-family: 'lobster';
+font-size: 40px;   
+color: #FFFFFF;
+display: grid;
+place-items: center; 
+position: relative;
+margin-top: 300px;
+}

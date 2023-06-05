@@ -38,9 +38,11 @@ das cores, foram escolhidas cores em tons de vermelho, combinadas mesclando amar
 
 De acordo com o problema do nosso cliente, e as histórias dos usuários, nosso protótipo se baseou no conceito de mobile-first, em telas de tablet. Nesta interface, dividimos as telas de acordo com o setor de nosso resturante, afim de visualizar especificamente a funcionalidade de cada departamento. Em seguida, aplicamos o posicionamento de cada elemento, pigmentamos com a palheta de cores escolhida, desenhamos com alto grau de detalhamento, apresentamos visualmente a funcionalidade completa para cada cargo e reproduzimos fielmente o produto final em termos de design.
 
-<div align="center"> <img src="src/assets/prototype1.png" width = "800px" height = "250px"/> </div>
-<div align="center"> <img src="src/assets/prototype2.png" width = "800px" height = "250px"/> </div>
-<div align="center"> <img src="src/assets/prototype3.png" width = "800px" height = "250px"/> </div>
+<div align="center"> <img src="src/assets/prototype1.png" width = "800px" height = "450px"/> </div>
+<div align="center"> <img src="src/assets/prototype2.png" width = "800px" height = "450px"/> </div>
+<div align="center"> <img src="src/assets/prototype3.png" width = "800px" height = "450px"/> </div>
+
+***
 
 ### <div align="center"> ⚠️ ATENÇÃO! Esta aplicação está em desenvolvimento... 💻 </div>
 
