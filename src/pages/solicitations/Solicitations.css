@@ -1,9 +1,61 @@
-.solicitation {
-font-family: 'lobster';
-font-size: 40px;   
-color: #FFFFFF;
-display: grid;
-place-items: center; 
-position: relative;
-margin-top: 300px;
+.solicitations-container{
+    display: grid;
+    background-color: #4C0305;
+    height: 100vh;
+    background-size: inherit; 
+    background-position: center;  
+    position: relative;
 }
+
+.square-brown{
+    background-color: #6d0909;
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    justify-self: center;
+}
+
+/* .button-logo{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+    'logo-solicitations' 'button-solicitation';
+    justify-items: center;
+    align-items: center;
+}
+
+.logo-solicitations {
+    display: grid; 
+    width: 150px;
+    height: 140px;
+    border-radius: 15px;
+    justify-items: center;
+    margin-top: -100px;
+    position: absolute;
+}
+
+.button-solicitation{
+    justify-items: flex-end;
+    margin-left: 70%;
+}
+
+@media (max-width: 720px) {
+
+    .button-logo{
+        grid-template-columns: auto;
+        grid-template-areas:
+        'logo-solicitations' 
+        'button-solicitation';
+    }
+
+    .button-solicitation{
+        margin-top: 50%;
+    }
+
+    .solicitations-container {
+      background-size: contain;
+    }
+  } */
+ 

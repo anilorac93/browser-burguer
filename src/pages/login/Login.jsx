@@ -30,21 +30,21 @@ export const Login = () => {
     e.preventDefault();
     login(email, sector, password)
       .then((response) => {
-        if (response.ok && sector === 'Atendimento') {
+        if (response.ok && sector === 'atendimento') {
           navigate('/pedidos');
   
           setEmail('');
           setSector('');
           setPassword('');
 
-        } if (response.ok && sector === 'Administração') {
+        } if (response.ok && sector === 'administração') {
           navigate('/administracao');
   
           setEmail('');
           setSector('');
           setPassword('');
 
-        } if (response.ok && sector === 'Cozinha') {
+        } if (response.ok && sector === 'cozinha') {
           navigate('/cozinha');
   
           setEmail('');
