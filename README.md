@@ -30,7 +30,7 @@ A interface do usuário (UI), ou seja, a parte visual desse projeto, foi pensada
 com base em nosso estabelecimento, uma hamburgueria. Atráves da psicologia 
 das cores, foram escolhidas cores em tons de vermelho, combinadas mesclando amarelo e vinho. Para estabelecer a paleta de cores escolhida (imagem abaixo), estudamos o que estas cores quentes despertam de emoção, e, quais estratégias de marketing podemos aplicar sobre elas. Sendo assim, verificamos que a combinação entre vermelho e amarelo é muito utilizada quando o objetivo é despertar a fome. Além disso, o vermelho provoca emoções fortes e estimula o apetite, sendo aplicada para criar um senso de urgência, atrair compradores e aguçar a fome. E a cor secundária, o amarelo, atrai a atenção e desperta o apetite. Desta forma, a paleta abaixo foi escolhida para estabelecer a comunicação visual entre os usuários e as páginas. Tanto a interface, quanto a experiência do usuário (UX), foram pensadas e baseadas atráves de protótipos construídos no figma.
 
-<div align="center"> <img src= "src/assets/palette.png" width = "450px" height = "550px"/> </div>
+<div align="center"> <img src= "src/assets/palette.png" width = "350px" height = "450px"/> </div>
 
 ***
 
