@@ -1,12 +1,23 @@
 import React from 'react';
 import './Solicitations.css';
+import { useNavigate } from 'react-router-dom';
+import ButtonMenu from '../../components/ButtonMenu';
 
 export const Solicitations = () => {
 
+  const handleMenu = () => {
+    navigate2('/cardapio');
+  };
+  const navigate2 = useNavigate();
+
 return (
-    <h1 className='solicitation'>
-      💻 Tela de pedidos em construção... 🔨🔧
-      {/* <img src="src/assets/menu.png" alt="Cardápio" className="menu" /> */}
-      </h1>
+  <div className='solicitations-container'>
+      <div className='button-logo'>
+        <img src='src/assets/logo.png' alt='Logo browser burguer' className='logo-solicitations' />
+        <ButtonMenu onClick={handleMenu} />
+      </div>
+    <div className='square-brown'>
+    </div>
+  </div>
   );
 };
