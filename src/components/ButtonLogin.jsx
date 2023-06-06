@@ -2,7 +2,7 @@ import React from 'react';
 
 const ButtonLogin = ({ onClick }) => {
   return (
-    <button type="submit" onClick={onClick}>
+    <button type='submit' onClick={onClick}>
       Entrar
     </button>
   );
