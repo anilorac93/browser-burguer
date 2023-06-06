@@ -13,8 +13,8 @@ export const Solicitations = () => {
 return (
   <div className='solicitations-container'>
       <div className='button-logo'>
-        {/* <img src='src/assets/logo.png' alt='Logo browser burguer' className='logo-solicitations' />
-        <ButtonMenu onClick={handleMenu} /> */}
+        <img src='src/assets/logo.png' alt='Logo browser burguer' className='logo-solicitations' />
+        <ButtonMenu onClick={handleMenu} />
       </div>
     <div className='square-brown'>
     </div>
