@@ -4,7 +4,7 @@ import Input from '../../components/Input';
 import Select from '../../components/Select';
 import ButtonLogin from '../../components/ButtonLogin';
 import { useNavigate } from 'react-router-dom';
-import ButtonMenu from '../../components/ButtonMenu';
+import ButtonMenuLogin from '../../components/ButtonMenuLogin';
 import { login } from '../../API/ApiMock';
 
 export const Login = () => {
@@ -107,7 +107,7 @@ export const Login = () => {
         <ButtonLogin onClick={Login} />
       </form>
       {message && <p className='message'>{message}</p>}
-      <ButtonMenu onClick={handleMenu} />
+      <ButtonMenuLogin onClick={handleMenu} />
     </div>
     </div>
   );

@@ -5,12 +5,14 @@
     background-size: inherit; 
     background-position: center;  
     position: relative;
+    /* overflow: hidden; */
 }
 
 .square-brown{
+    display: grid;
     background-color: #6d0909;
     width: 90%;
-    height: 450px;
+    height: 500px;
     border-radius: 15px;
     justify-self: center;
     align-self: end;
@@ -18,29 +20,92 @@
     margin-top: 10px;
 }
 
-.button-logo{
+.top-buttons{
     display: inline-grid;
     grid-template-columns: 1fr auto;
     grid-template-areas:
-    'logo-solicitations' 'button-solicitation';
-    justify-items: center;
-    align-items: center;
-    margin-top: 15px;
+    'buttonMenuSolicitation' 'buttonStatusSolicitation';
+    margin-top: 10px;
+    margin-left: 100px;
 }
 
 .logo-solicitations {
     width: 130px;
     height: 120px;
     border-radius: 15px;
+    margin: 10px;
+    justify-self: center;
 }
 
-.button-solicitation{
-    justify-items: flex-end;
-    margin-right: 100px;
-    position: relative;
+.button-status-solicitations{
+   width: 200px;
+   height: 40px;
+   padding: 5px;
+   background-color: #BA4B3A;
+   border-radius: 40px;
+   margin-left: -300px;
+   color: #ffffff;
+   margin-top: -100px;
+}
+
+.buttonMenuSolicitations{
+   width: 200px;
+   height: 40px;
+   padding: 5px;
+   background-color: #BA4B3A;
+   border-radius: 40px;
+   color: #ffffff;
+   margin-top: -100px;
 }
  
-@media (max-width: 700px) {
+.modal{
+    display: grid;
+    background-color: #6d0909;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    margin: 25px auto;
+}
+
+.closeButton{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    justify-self: end;
+    margin: 15px;
+}
+
+/* .bottom-buttons{
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+    'button-cancel' 'button-confirm';
+    grid-gap: 150px;
+    margin-left: 200px;
+    margin-top: 360px;
+} */
+
+.button-cancel, .button-confirm, .button-abstract-solicitation{
+    width: 170px;
+    height: 30px;
+    padding: 2px;
+    background-color: #BA4B3A;
+    border-radius: 40px;
+}
+
+.button-abstract-solicitation{
+    justify-self: center;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .square-brown{
+        height: 600px;
+    }
+}
+
+@media (max-width: 770px) {
 
     .square-brown{
         background-color: #6d0909;
@@ -51,6 +116,15 @@
         align-self: end;
         margin-bottom: 20px;
     }
+
+    .button-status-solicitations{
+        margin-left: -300px;
+        margin-top: -20px;
+     }
+     
+     .buttonMenuSolicitations{
+        margin-top: -20px;
+     }
 }
 @media (max-width: 520px) {
 
@@ -65,15 +139,6 @@
         padding-top: 10px;
     }
 
-    .button-logo{
-        grid-template-columns: auto;
-        grid-template-areas:
-        'logo-solicitations' 
-        'button-solicitation';
-        justify-items: center;
-        gap: 20px;
-    }
-
     .button-solicitation{
         margin-top: -10px;
         justify-items: center;
@@ -81,5 +146,23 @@
 
     .solicitations-container {
       background-size: contain;
+    }
+
+    .button-status-solicitations{
+        width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+     }
+     
+     .buttonMenuSolicitations{
+        width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 30px;
+     }
+     .top-buttons{
+     margin-left: 0px;
     }
   } 
