@@ -1,5 +1,5 @@
 export const login = (email, sector, password) => 
-  fetch('https://burger-queen-api-mock-nu.vercel.app/login', {
+  fetch('http://localhost:8080/login', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

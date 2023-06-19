@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1685983709065" clover="3.2.0">
-  <project timestamp="1685983709066" name="All files">
-    <metrics statements="40" coveredstatements="31" conditionals="4" coveredconditionals="1" methods="14" coveredmethods="10" elements="58" coveredelements="42" complexity="0" loc="40" ncloc="40" packages="3" files="6" classes="6"/>
+<coverage generated="1686765748309" clover="3.2.0">
+  <project timestamp="1686765748309" name="All files">
+    <metrics statements="50" coveredstatements="31" conditionals="14" coveredconditionals="1" methods="14" coveredmethods="10" elements="78" coveredelements="42" complexity="0" loc="50" ncloc="50" packages="3" files="6" classes="6"/>
     <package name="API">
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="ApiMock.js" path="C:\Users\vanes\browser-burguer\src\API\ApiMock.js">
+      <file name="ApiMock.js" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\API\ApiMock.js">
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -12,23 +12,23 @@
     </package>
     <package name="components">
       <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-      <file name="ButtonLogin.jsx" path="C:\Users\vanes\browser-burguer\src\components\ButtonLogin.jsx">
+      <file name="ButtonLogin.jsx" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\components\ButtonLogin.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
       </file>
-      <file name="ButtonMenu.jsx" path="C:\Users\vanes\browser-burguer\src\components\ButtonMenu.jsx">
+      <file name="ButtonMenuLogin.jsx" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\components\ButtonMenuLogin.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
       </file>
-      <file name="Input.jsx" path="C:\Users\vanes\browser-burguer\src\components\Input.jsx">
+      <file name="Input.jsx" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\components\Input.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="20" type="stmt"/>
         <line num="5" count="20" type="stmt"/>
       </file>
-      <file name="Select.jsx" path="C:\Users\vanes\browser-burguer\src\components\Select.jsx">
+      <file name="Select.jsx" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\components\Select.jsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
@@ -37,9 +37,9 @@
       </file>
     </package>
     <package name="pages.login">
-      <metrics statements="27" coveredstatements="19" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="5"/>
-      <file name="Login.jsx" path="C:\Users\vanes\browser-burguer\src\pages\login\Login.jsx">
-        <metrics statements="27" coveredstatements="19" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="5"/>
+      <metrics statements="37" coveredstatements="19" conditionals="14" coveredconditionals="1" methods="8" coveredmethods="5"/>
+      <file name="Login.jsx" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\pages\login\Login.jsx">
+        <metrics statements="37" coveredstatements="19" conditionals="14" coveredconditionals="1" methods="8" coveredmethods="5"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="11" type="stmt"/>
         <line num="12" count="10" type="stmt"/>
@@ -54,19 +54,29 @@
         <line num="29" count="10" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="34" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="47" count="10" type="stmt"/>
-        <line num="52" count="10" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="55" count="10" type="stmt"/>
-        <line num="57" count="10" type="stmt"/>
-        <line num="63" count="10" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="10" type="stmt"/>
+        <line num="67" count="10" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="70" count="10" type="stmt"/>
+        <line num="72" count="10" type="stmt"/>
+        <line num="78" count="10" type="stmt"/>
       </file>
     </package>
   </project>
