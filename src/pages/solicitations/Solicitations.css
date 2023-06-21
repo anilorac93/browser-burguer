@@ -8,6 +8,16 @@
     /* overflow: hidden; */
 }
 
+.button-add img{
+    width: 30px;
+    height: 30px;
+    background-color: #6d0909;
+}
+
+.button-add{
+    background-color: #6d0909;
+}
+
 .square-brown{
     display: grid;
     background-color: #6d0909;
@@ -75,6 +85,15 @@
     margin: 15px;
 }
 
+ul{
+    color: white;
+    list-style-type: none;
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
 /* .bottom-buttons{
     display: inline-grid;
     grid-template-columns: 1fr auto;
@@ -125,8 +144,25 @@
      .buttonMenuSolicitations{
         margin-top: -20px;
      }
+     ul{
+        color: white;
+        list-style-type: none;
+        font-size: 40px;
+        margin-top: 20px;
+        line-height: 50px;
+        margin-left: 20px;
+    }
 }
 @media (max-width: 520px) {
+
+    ul{
+        color: white;
+        list-style-type: none;
+        font-size: 25px;
+        margin-top: 10px;
+        line-height: 30px;
+        margin-left: 20px;
+    }
 
     .square-brown{
         background-color: #6d0909;

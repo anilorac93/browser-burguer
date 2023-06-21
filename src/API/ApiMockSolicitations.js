@@ -1,11 +1,8 @@
-export const solicitationsAPI = (email, password) => 
+export const solicitationsAPI = (data) => 
   fetch('http://localhost:8080/products', {
   method: 'GET',
   headers: {
     'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    email,
-    password,
-  }),
+    Authorization: 'Bearer ' + localStorage.getItem ('token')
+  }
 });
