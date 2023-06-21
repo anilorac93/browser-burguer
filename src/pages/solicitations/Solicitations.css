@@ -1,16 +1,18 @@
-.solicitations-container {
+.solicitations-container{
     display: grid;
     background-color: #4C0305;
     height: 100vh;
     background-size: inherit; 
     background-position: center;  
     position: relative;
+    /* overflow: hidden; */
 }
 
 .square-brown{
+    display: grid;
     background-color: #6d0909;
-    width: 60%;
-    height: 450px;
+    width: 90%;
+    height: 500px;
     border-radius: 15px;
     justify-self: center;
     align-self: end;
@@ -18,77 +20,149 @@
     margin-top: 10px;
 }
 
-.button-logo {
-    gap: 15%;
-    width: 60%;
+.top-buttons{
     display: inline-grid;
     grid-template-columns: 1fr auto;
     grid-template-areas:
-    'logo-solicitations' 'button-solicitation';
-    justify-items: center;
-    align-items: center;
-    margin-top: 15px;
+    'buttonMenuSolicitation' 'buttonStatusSolicitation';
+    margin-top: 10px;
+    margin-left: 100px;
 }
 
 .logo-solicitations {
-    margin-left: 700px;
     width: 130px;
     height: 120px;
     border-radius: 15px;
+    margin: 10px;
+    justify-self: center;
 }
 
-.button-solicitation{
-    justify-items: flex-end;
-    position: absolute;
+.button-status-solicitations{
+   width: 200px;
+   height: 40px;
+   padding: 5px;
+   background-color: #BA4B3A;
+   border-radius: 40px;
+   margin-left: -300px;
+   color: #ffffff;
+   margin-top: -100px;
 }
 
-@media screen and (max-width: 1024px) {
-    .button-logo {
-      width: 90%; 
-      grid-template-columns: auto; 
-      grid-template-areas: 'logo-solicitations' 'button-solicitation';
-      justify-content: center; 
-      margin-top: 10px;
-    }
-  
-    .logo-solicitations {
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 10px;
-    }
-    
-    .button-solicitation {
-      margin-right: 20px;
-      width: 150px;
-      justify-items: center;
-    }
-  }
+.buttonMenuSolicitations{
+   width: 200px;
+   height: 40px;
+   padding: 5px;
+   background-color: #BA4B3A;
+   border-radius: 40px;
+   color: #ffffff;
+   margin-top: -100px;
+}
+ 
+.modal{
+    display: grid;
+    background-color: #6d0909;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    margin: 25px auto;
+}
 
-@media screen and (max-width: 768px) {
-    .square-brown {
-      height: 500px;
+.closeButton{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    justify-self: end;
+    margin: 15px;
+}
+
+/* .bottom-buttons{
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+    'button-cancel' 'button-confirm';
+    grid-gap: 150px;
+    margin-left: 200px;
+    margin-top: 360px;
+} */
+
+.button-cancel, .button-confirm, .button-abstract-solicitation{
+    width: 170px;
+    height: 30px;
+    padding: 2px;
+    background-color: #BA4B3A;
+    border-radius: 40px;
+}
+
+.button-abstract-solicitation{
+    justify-self: center;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .square-brown{
+        height: 600px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .square-brown{
+        background-color: #6d0909;
+        width: 90%;
+        height: 800px;
+        border-radius: 15px;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: 20px;
     }
 
-    .button-logo {
-    gap: 1px;
-      width: 99%;
-      grid-template-columns: auto; 
-      grid-template-areas:
-        'logo-solicitation '
-        'button-solicitation';
-      justify-content: center; 
-      margin-top: 10px; 
+    .button-status-solicitations{
+        margin-left: -300px;
+        margin-top: -20px;
+     }
+     
+     .buttonMenuSolicitations{
+        margin-top: -20px;
+     }
+}
+@media (max-width: 520px) {
+
+    .square-brown{
+        background-color: #6d0909;
+        width: 90%;
+        height: 500px;
+        border-radius: 15px;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: 20px;
+        padding-top: 10px;
     }
-  
-    .logo-solicitations {
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 10px;
-    }
+
     .button-solicitation{
-        justify-items:center;
-        
-        margin-right: 500px;
+        margin-top: -10px;
+        justify-items: center;
     }
-  }
-  
+
+    .solicitations-container {
+      background-size: contain;
+    }
+
+    .button-status-solicitations{
+        width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+     }
+     
+     .buttonMenuSolicitations{
+        width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 30px;
+     }
+     .top-buttons{
+     margin-left: 0px;
+    }
+  } 

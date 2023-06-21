@@ -4,7 +4,7 @@ import Input from '../../components/Input';
 import Select from '../../components/Select';
 import ButtonLogin from '../../components/ButtonLogin';
 import { useNavigate } from 'react-router-dom';
-import ButtonMenu from '../../components/ButtonMenu';
+import ButtonMenuLogin from '../../components/ButtonMenuLogin';
 import { login } from '../../API/ApiMock';
 
 export const Login = () => {
@@ -26,38 +26,43 @@ export const Login = () => {
   }; // Ao chamar as funções de email, setor e senha com o: (e.target.value), estamos atualizando o valor do estado email, setor e senha com o novo valor do campo de email, setor e senha. Isso faz com que o componente seja re-renderizado e o novo valor de cada um deles seja refletido na interface do usuário.
 
   // A função handleSubmit é um manipulador de evento que é chamado quando o formulário é submetido, ou seja, quando o usuário clica no botão 'Entrar':
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    login(email, sector, password)
-      .then((response) => {
-        if (response.ok && sector === 'atendimento') {
-          navigate('/pedidos');
+    try {
+  const response = await login(email, sector, password)
+  const jsonData = await response.json();
+  console.log(jsonData);
   
-          setEmail('');
-          setSector('');
-          setPassword('');
+  localStorage.setItem('token', jsonData.accessToken)
 
-        } if (response.ok && sector === 'administração') {
-          navigate('/administracao');
-  
-          setEmail('');
-          setSector('');
-          setPassword('');
+  if (response.ok && sector === 'atendimento') {
+    navigate('/pedidos');
 
-        } if (response.ok && sector === 'cozinha') {
-          navigate('/cozinha');
-  
-          setEmail('');
-          setSector('');
-          setPassword('');
+    setEmail('');
+    setSector('');
+    setPassword('');
 
-        } else {
-          setMessage('Erro ao fazer login. Verifique suas credenciais.');
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+  } if (response.ok && sector === 'administração') {
+    navigate('/administracao');
+
+    setEmail('');
+    setSector('');
+    setPassword('');
+
+  } if (response.ok && sector === 'cozinha') {
+    navigate('/cozinha');
+
+    setEmail('');
+    setSector('');
+    setPassword('');
+
+  } else {
+    setMessage('Erro ao fazer login. Verifique suas credenciais.');
+  }
+
+  } catch(error) {
+  console.log(error);
+    }
   };
   const navigate = useNavigate();
 
@@ -107,7 +112,7 @@ export const Login = () => {
         <ButtonLogin onClick={Login} />
       </form>
       {message && <p className='message'>{message}</p>}
-      <ButtonMenu onClick={handleMenu} />
+      <ButtonMenuLogin onClick={handleMenu} />
     </div>
     </div>
   );

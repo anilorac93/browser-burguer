@@ -2,7 +2,7 @@ import React from 'react';
 
 const ButtonMenu = ({ onClick }) => {
   return (
-    <button className='button-menu' onClick={onClick}>
+    <button className= 'buttonMenuSolicitations' onClick={onClick}>
       Cardápio
     </button>
   );

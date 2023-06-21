@@ -86,6 +86,10 @@ border-radius: 15px;
 cursor: pointer;
 }  
 
+.menu-login-page{
+    margin-left: 110px;
+}
+
 .message {
 font-family: 'lobster';
 font-size: 18px;   
