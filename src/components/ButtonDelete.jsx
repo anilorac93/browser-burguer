@@ -1,5 +1,5 @@
 import React from 'react';
-import deleteIcon from '../../assets/deleteIcon.png'; 
+import deleteIcon from '../assets/deleteIcon.png'; 
 
 const ButtonDelete = ({ onClick }) => {
   return (

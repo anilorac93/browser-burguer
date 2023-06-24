@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const Input = ({ label, type, value, onChange, required }) => {
+  const inputRef = useRef(null); 
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
   const inputId = `${label.toLowerCase()}-input`;
   return (
     <div>
       <label htmlFor={inputId}>{label}</label>
-      <input
+      <input 
+        ref={inputRef}
         id={inputId}
         type={type}
         value={value}

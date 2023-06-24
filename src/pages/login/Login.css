@@ -45,8 +45,10 @@ margin-bottom: 15px;
 margin-left: 18px;
 }
 
-input[type="email"],
-input[type="password"] {
+input[type='email'],
+input[type='password']{
+font-family: 'lobster';
+font-size: 20px;
 padding: 10px;
 margin-bottom: 10px;
 border: 1px solid #ccc;

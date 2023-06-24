@@ -12,15 +12,13 @@ export const Login = () => {
   const [sector, setSector] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
-
+  
   const handleEmailChange = (e) => {  // Essa função é um manipulador de eventos que é chamado quando o valor do campo de email é alterado pelo usuário.
     setEmail(e.target.value); // É responsável por atualizar o estado email com o novo valor do campo de email.
   };
-
   const handleSectorChange = (e) => {
     setSector(e.target.value);
   };
-
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   }; // Ao chamar as funções de email, setor e senha com o: (e.target.value), estamos atualizando o valor do estado email, setor e senha com o novo valor do campo de email, setor e senha. Isso faz com que o componente seja re-renderizado e o novo valor de cada um deles seja refletido na interface do usuário.
@@ -32,26 +30,23 @@ export const Login = () => {
   const response = await login(email, sector, password)
   const jsonData = await response.json();
   console.log(jsonData);
-  
+
   localStorage.setItem('token', jsonData.accessToken)
-
-  if (response.ok && sector === 'atendimento') {
+  
+    if (response.ok && sector === 'atendimento') {
     navigate('/pedidos');
-
     setEmail('');
     setSector('');
     setPassword('');
 
-  } if (response.ok && sector === 'administração') {
+    } if (response.ok && sector === 'administração') {
     navigate('/administracao');
-
     setEmail('');
     setSector('');
     setPassword('');
 
   } if (response.ok && sector === 'cozinha') {
     navigate('/cozinha');
-
     setEmail('');
     setSector('');
     setPassword('');
@@ -60,12 +55,11 @@ export const Login = () => {
     setMessage('Erro ao fazer login. Verifique suas credenciais.');
   }
 
-  } catch(error) {
+    } catch(error) {
   console.log(error);
     }
   };
   const navigate = useNavigate();
-
     // Aqui adicionar a lógica para verificar as credenciais e fazer o login.
     // Usar a API e fazer uma requisição para o servidor (vercel).
 
@@ -79,7 +73,7 @@ export const Login = () => {
     { value: 'atendimento', label: 'Atendimento' },
     { value: 'cozinha', label: 'Cozinha' },
   ];
-
+  
   return (
     <div className='login-container'>
       <div className='grid-container'>
@@ -92,14 +86,12 @@ export const Login = () => {
           onChange={handleEmailChange}
           required
         />
-
         <Select
           label='Setor'
           value={sector}
           onChange={handleSectorChange}
           options={[{ value: '', label: 'Qual é o seu departamento?' }, ...sectorOptions]}
         />
-
         <Input
           label='Senha'
           type='password'
@@ -115,5 +107,4 @@ export const Login = () => {
       <ButtonMenuLogin onClick={handleMenu} />
     </div>
     </div>
-  );
-};
+  )};
