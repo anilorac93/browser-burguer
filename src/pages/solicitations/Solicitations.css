@@ -11,11 +11,11 @@
 .button-add img{
     width: 30px;
     height: 30px;
-    background-color: #6d0909;
+    background-color: transparent;
 }
 
 .button-add{
-    background-color: #6d0909;
+    background-color: transparent;
 }
 
 .square-brown{
@@ -90,8 +90,8 @@ ul{
     list-style-type: none;
     font-size: 30px;
     margin-top: 10px;
-    line-height: 40px;
     margin-left: 20px;
+    line-height: 32px;
 }
 
 /* .bottom-buttons{
