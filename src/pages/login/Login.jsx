@@ -6,11 +6,13 @@ import ButtonLogin from '../../components/ButtonLogin';
 import { useNavigate } from 'react-router-dom';
 import ButtonMenuLogin from '../../components/ButtonMenuLogin';
 import { login } from '../../API/ApiMock';
+
 export const Login = () => {
   const [email, setEmail] = useState(''); // utiliza o hook useState do React para criar uma variável de estado chamada email. O hook useState retorna um array com dois elementos: o valor atual do estado (email), e uma função para atualizar esse valor (setEmail).
   const [sector, setSector] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  
   const handleEmailChange = (e) => {  // Essa função é um manipulador de eventos que é chamado quando o valor do campo de email é alterado pelo usuário.
     setEmail(e.target.value); // É responsável por atualizar o estado email com o novo valor do campo de email.
   };
@@ -20,6 +22,7 @@ export const Login = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   }; // Ao chamar as funções de email, setor e senha com o: (e.target.value), estamos atualizando o valor do estado email, setor e senha com o novo valor do campo de email, setor e senha. Isso faz com que o componente seja re-renderizado e o novo valor de cada um deles seja refletido na interface do usuário.
+
   // A função handleSubmit é um manipulador de evento que é chamado quando o formulário é submetido, ou seja, quando o usuário clica no botão 'Entrar':
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,41 +30,50 @@ export const Login = () => {
   const response = await login(email, sector, password)
   const jsonData = await response.json();
   console.log(jsonData);
+
   localStorage.setItem('token', jsonData.accessToken)
-  if (response.ok && sector === 'atendimento') {
+  
+    if (response.ok && sector === 'atendimento') {
     navigate('/pedidos');
     setEmail('');
     setSector('');
     setPassword('');
-  } if (response.ok && sector === 'administração') {
+
+    } if (response.ok && sector === 'administração') {
     navigate('/administracao');
     setEmail('');
     setSector('');
     setPassword('');
+
   } if (response.ok && sector === 'cozinha') {
     navigate('/cozinha');
     setEmail('');
     setSector('');
     setPassword('');
+
   } else {
     setMessage('Erro ao fazer login. Verifique suas credenciais.');
   }
-  } catch(error) {
+
+    } catch(error) {
   console.log(error);
     }
   };
   const navigate = useNavigate();
     // Aqui adicionar a lógica para verificar as credenciais e fazer o login.
     // Usar a API e fazer uma requisição para o servidor (vercel).
+
   const handleMenu = () => {
     navigate2('/cardapio'); // AQUI, SUBSTITUIR /cardapio pela rota correta para a página do cardápio.
   };
   const navigate2 = useNavigate();
+
   const sectorOptions = [
     { value: 'administração', label: 'Administração' },
     { value: 'atendimento', label: 'Atendimento' },
     { value: 'cozinha', label: 'Cozinha' },
   ];
+  
   return (
     <div className='login-container'>
       <div className='grid-container'>

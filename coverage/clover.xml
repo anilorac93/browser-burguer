@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1686765748309" clover="3.2.0">
-  <project timestamp="1686765748309" name="All files">
+<coverage generated="1686764248468" clover="3.2.0">
+  <project timestamp="1686764248468" name="All files">
     <metrics statements="50" coveredstatements="31" conditionals="14" coveredconditionals="1" methods="14" coveredmethods="10" elements="78" coveredelements="42" complexity="0" loc="50" ncloc="50" packages="3" files="6" classes="6"/>
     <package name="API">
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -17,7 +17,7 @@
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
       </file>
-      <file name="ButtonMenuLogin.jsx" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\components\ButtonMenuLogin.jsx">
+      <file name="ButtonMenu.jsx" path="C:\Users\vanes\browser-burguer\src\components\ButtonMenu.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
@@ -37,9 +37,9 @@
       </file>
     </package>
     <package name="pages.login">
-      <metrics statements="37" coveredstatements="19" conditionals="14" coveredconditionals="1" methods="8" coveredmethods="5"/>
-      <file name="Login.jsx" path="C:\Users\Carolina Mariotto\Desktop\SAP009-Burguer-Queen\browser-burguer\src\pages\login\Login.jsx">
-        <metrics statements="37" coveredstatements="19" conditionals="14" coveredconditionals="1" methods="8" coveredmethods="5"/>
+      <metrics statements="27" coveredstatements="19" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="5"/>
+      <file name="Login.jsx" path="C:\Users\vanes\browser-burguer\src\pages\login\Login.jsx">
+        <metrics statements="27" coveredstatements="19" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="5"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="11" type="stmt"/>
         <line num="12" count="10" type="stmt"/>

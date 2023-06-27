@@ -4,8 +4,7 @@ import './Menu.css';
 export const Menu = () => {
 
 return (
-    <figure className="menu">
-      {/* <img src="src/assets/menu.png" alt="Cardápio" className="menu" /> */}
+    <figure className='menu'>
       </figure>
   );
 };

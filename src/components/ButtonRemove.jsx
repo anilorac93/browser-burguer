@@ -1,5 +1,5 @@
 import React from 'react';
-import removeIcon from '../../assets/removeIcon.png'; 
+import removeIcon from '../assets/removeIcon.png'; 
 
 const ButtonRemove = ({ onClick }) => {
   return (
